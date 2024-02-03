@@ -4,6 +4,13 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+body {
+  background: url("./images//bg-pattern-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   display: grid;
   grid-template-columns: 60vw minmax(400px, 40vw);
