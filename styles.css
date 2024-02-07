@@ -94,20 +94,21 @@ form input {
 .arrow {
   position: absolute;
   padding: 1.1rem 2.5rem;
-  background-color: red;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   border-radius: 2rem;
   top: 15px;
   left: 360px;
 
   &:hover {
     box-shadow: -5px 5px 20px rgb(247, 184, 167);
+    transform: scale(1.2);
   }
 }
 
 .error {
   padding: 0.5rem 2rem;
   font-size: small;
-  color: hsl(0, 36%, 70%);
+  color: hsl(0, 93%, 68%);
   display: none;
 }
 
@@ -183,5 +184,21 @@ form input {
 
   .hero img {
     height: auto;
+  }
+}
+
+.ani {
+  display: block;
+  animation: animate 1s linear 0ms forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
